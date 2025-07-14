@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | JPPS Teaching Curriculum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <meta name="description" content="Explore all essential learning materials, academic documents, and student support resources in one place.This section includes downloadable timetables, fee structure, book price lists, syllabus documents, and other important notices to help parents and students stay updated and organized throughout the academic year.">
+  <meta name="keywords" content="JPPS, JPPS school, about jpps, jpps teaching curriculum">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="James Proneir">
+  <meta property="og:title" content="J-P-P.S Teaching Curriculum">
+  <meta property="og:description" content="Explore all essential learning materials, academic documents, and student support resources in one place.This section includes downloadable timetables, fee structure, book price lists, syllabus documents, and other important notices to help parents and students stay updated and organized throughout the academic year.">
+  <meta property="og:image" content="https://jpps-school.github.io/jpps/img/jpps_logo.webp" type="image/webp">
+  <meta property="og:url" content="https://jpps-school.github.io/jpps/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="https://jpps-school.github.io/jpps/img/jpps_logo.webp" type="image/webp">
+    <style>
+        /* ===== GLOBAL STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fc;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        
+        /* ===== NAVIGATION ===== */
+        .navbar {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+        
+        .nav-links a.active {
+            color: #4e73df;
+            font-weight: 600;
+        }
+        
+        /* ===== HERO SECTION ===== */
+        .resources-hero {
+            background: linear-gradient(135deg, #2c3e50 0%, #4e73df 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        /* ===== NOTICES SECTION ===== */
+        .notices-section {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 40px 0;
+        }
+        
+        .notice-board {
+            margin-top: 30px;
+        }
+        
+        .notice-board ul{
+            margin-left: 30px;
+        }
+        
+        .notice-item {
+            padding: 20px;
+            border-left: 4px solid #4e73df;
+            background: #f8f9fc;
+            margin-bottom: 15px;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .notice-item.urgent {
+            border-left-color: #e74a3b;
+            background: #fdf3f2;
+        }
+        
+        .notice-date {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-bottom: 5px;
+        }
+        
+        .notice-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        /* ===== RESOURCES SECTION ===== */
+        .resources-section {
+            margin: 50px auto;
+        }
+        
+        .resource-cards {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .resource-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+            border-top: 3px solid #4e73df;
+            flex-grow: 1;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .resource-icon {
+            font-size: 2rem;
+            color: #4e73df;
+            margin-bottom: 15px;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 15px;
+            background: #4e73df;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+        
+        .download-btn:hover {
+            background: #2c3e50;
+        }
+        
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .navbar .container {
+                flex-direction: column;
+            }
+            
+            .nav-links {
+                margin-top: 15px;
+            }
+            
+            .resource-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+   <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+  <div class="logo-area">
+    <img src="img/jpps_logo.webp" alt="School Logo" />
+    <div class="school-name">JPPS TEACHING CURRICULUM</div>
+  </div>
+  <div class="menu-btn" onclick="toggleDrawer()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- Drawer -->
+<div class="drawer" id="navDrawer">
+  <h2>Menu</h2>
+  <div class="link-cluster">
+      <span>Home</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="index.html#why-choose">Why Choose JPPS?</a>         
+          <a href="index.html#our-principal">Our Principal</a>  
+          <a href="index.html#faculty">Our Distinguished Faculty</a> 
+          <a href="index.html#testimonials">Testimonials</a> 
+           <a href="index.html#life-at-jpps">Life At JPPS</a> 
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>About Us</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="about.html#guiding-principle">Our Guiding Principles</a>         
+          <a href="about.html#founder">Our Beloved Founder</a>
+          <a href="about.html#day-at-jpps">A Day at JPPS</a>
+          <a href="about.html#proud-moments">Our Proud Moments</a>
+          <a href="about.html#journey">Our Journey</a>
+          <a href="about.html#school-uniform">School Uniform</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Acedamics & Curriculum</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="curriculum.html#grade-level">Grade Level Curriculum</a>         
+          <a href="curriculum.html#school-calender">School Calender</a>
+          <a href="curriculum.html#allEvents">Upcoming Events</a>
+          <a href="curriculum.html#teaching-methods">Innovative Teaching Methods</a>
+          <a href="curriculum.html#assessment-system">Continuous Assessment System</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Admission Details</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="admission.html#main-requirement">Essential Requirements</a>         
+          <a href="admission.html#fee-structure">Complete Fee Structure</a>
+          <a href="admission.html#book-price">Complete Book Policy</a>
+          <a href="admission.html#child-need">What Your Child Needs</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Resources</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="resource.html#daily-updates">Daily Updates</a>         
+          <a href="resource.html#important-documents">Important Documents</a>
+          <a href="resource.html#daily-homework">Homework & assignment</a>
+          <a href="admission.html#child-need">What Your Child Needs</a>
+      </div>
+  </div>
+  <a href="facility.html">School Facility</a>
+  <div class="link-cluster">
+      <span>Gallery</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="gallery.html#school-videos">School Videos</a>         
+          <a href="gallery.html#photo-collection">Photo Collection</a>
+          <a href="gallery.html#alumni-stories">Alumni Stories</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Apply</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="apply.html#admission-steps">Three Steps for Admission</a>         
+          <a href="apply.html#application-form">Admission Form</a>
+          <a href="apply.html#affordable-fee">Affordable Fee Structure (overview)</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Contact</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="contact.html#connect-with-us">Directly Connect With Us</a>         
+          <a href="contact.html#school-location">School Location</a>   
+          <a href="contact.html#department-contacts">Department Contacts</a>   
+          <a href="contact.html#contact-form">Contact Form</a>   
+          <a href="contact.html#faq">FAQ</a>   
+      </div>
+  </div>
+</div>
+
+<!-- Optional overlay -->
+<div class="overlay" id="drawerOverlay" onclick="toggleDrawer()"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>School Resources</h1>
+            <p>Daily notices and important documents for students and parents</p>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+   
+
+    <!-- Daily Notices Section -->
+    <section class="container" id="daily-updates">
+        <div class="notices-section">
+            <h2 class="section-title"><i class="fas fa-bullhorn"></i> Daily Notices</h2>            
+            
+            <div class="notice-board">
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Resources Section -->
+    <section class="container resources-section" id="important-documents">
+        <h2 class="section-title"><i class="fas fa-file-alt"></i> Important Documents</h2>
+        
+        <div class="resource-cards">
+            
+        </div>
+    </section>
+    
+   
+
+<!-- 2. Homework & Assignments -->
+<section class="container resources-section" id="daily-homework">
+    <h2 class="section-title"><i class="fas fa-tasks"></i> Homework & Assignments</h2>
+    <div class="notice-board">
+        
+    </div>
+</section>
+
+
+
+    <!-- Same footer as other pages -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>JPPS School</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Fattuchak Road<br>Banka City, IN 813224</p>
+                    <p><i class="fas fa-phone"></i> +91 9661560039,<br>+91 8084968563</p>
+                    <p><i class="fas fa-envelope"></i> jpps.school.edu@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="curriculum.html">Academics</a></li>
+                        <li><a href="admission.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="https://jpps-school.github.io/drawing-board">Drawing Board</a></li>
+                        <li><a href="apply.html#application-form">Admission Form</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="curriculum.html#school-calender">School Calendar</a></li>
+                        <li><a href="https://jpps-resultportal.onrender.com">Result Portal</a></li>
+                        <li><a href="resource.html#important-documents">Important Documents</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100054614447260" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/9661716014" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/@j.p-p.s___team?si=xop_phLMwGV3TeU0" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="tel:+919661716014"><i class="fas fa-phone-alt"></i></a>
+                    </div>
+                    <form id="subscriptionForm">
+                      <div class="newsletter">
+                        <input type="text" name="formType" value="subscription" hidden>
+                        <input type="email" placeholder="Your Email" name="email" required>
+                        <button class="subscribe-btn" type="submit">Subscribe</button>
+                      </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 JPPS School. All Rights Reserved.</p>
+                <a href="https://wa.me/+919661854282" style="text-decoration:none;"><p style="color:#55c1ff">• Build and Designed by Mahi Devs</p></a>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-condition.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- overlay for form submission -->
+    <div id="formOverlay">
+        <div>
+            <span></span>
+            <p>Submitting...</p>
+        </div>
+    </div>
+    
+    <script src="js/sidePages.js"></script>
+    <script>
+    let noticeBoard = document.querySelectorAll(".notice-board");
+    let documents = document.querySelector(".resource-cards");
+        fetch("https://opensheet.elk.sh/157doN3yo8TZeXSUFv4QKBRApofWHCCEVTo8Wh1LVtug/Notice").then(res => res.json()).then(data =>{
+            if(data.length == 0){
+                return;
+            }
+            data.forEach(row=>{
+                const wrapper = document.createElement("div");
+                wrapper.classList.add("notice-item");
+                wrapper.innerHTML =`
+                <div class="notice-date">${row.Date}${(row.Urgent.toUpperCase() === "TRUE") ? " (URGENT)" : ""}</div>
+                <h3 class="notice-title">${row.Title}</h3>
+                <p>${row.Subject}</p>`;
+                if(row.Urgent.toUpperCase() === "TRUE"){
+                    wrapper.classList.add("urgent");
+                }
+                noticeBoard[0].appendChild(wrapper);
+            })
+        })
+        
+        
+        fetch("https://opensheet.elk.sh/157doN3yo8TZeXSUFv4QKBRApofWHCCEVTo8Wh1LVtug/Homework").then(res => res.json()).then(data =>{
+            if(data.length == 0){
+                return;
+            }           
+            data.forEach(row=>{
+                let i = 1;
+                let lists = "";
+                    while(row[`List${i}`]){
+                    lists += `<li>${row[`List${i}`]}</li>`;
+                    i++
+                }
+                const wrapper = document.createElement("div");
+                wrapper.classList.add("notice-item");
+                wrapper.innerHTML =`
+                <div class="notice-date">${row.Date}</div>
+                <h3 class="notice-title">${row.Title}</h3>
+                <ul>
+                    ${lists}
+                </ul>`;
+                noticeBoard[1].appendChild(wrapper);
+            })
+        })
+        
+        fetch("https://opensheet.elk.sh/13o5pUJmfuKz6wL-nRPZOgnGiAbIO751zcYHumhz5SZs/Sheet1").then(res => res.json()).then(data =>{
+            if(data.length == 0){
+                return;
+            }           
+            data.forEach(row=>{
+                const wrapper = document.createElement("div");
+                wrapper.classList.add("resource-card");
+                let fileIcon = "";
+                if(row.Type.toUpperCase() == "IMAGE"){
+                    fileIcon = "fas fa-file-image"
+                }else if(row.Type.toUpperCase() == "PDF"){
+                    fileIcon = "fas fa-file-pdf"
+                }else{
+                    fileIcon = "fa-solid fa-file"
+                }
+                wrapper.innerHTML =`
+                <div class="resource-icon">
+                    <i class="${fileIcon}"></i>
+                </div>
+                <h3>${row.Title}</h3>
+                <p>${row.Caption}</p>
+                <a href="${row.FileUrl}" class="download-btn" download>
+                    <i class="fas fa-download"></i> Download (${row.Type})
+                </a>`;
+                documents.appendChild(wrapper);
+            })
+        })
+    </script>
+</body>
+</html>

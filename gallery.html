@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Gallery | JPPS Village School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <meta name="description" content="Browse highlights from school events, student artwork, classroom moments, and daily life at JPPS — where learning and expression go hand in hand.">
+  <meta name="keywords" content="JPPS, JPPS school, about jpps, jpps teaching curriculum">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="James Proneir">
+  <meta property="og:title" content="J-P-P.S Teaching Curriculum">
+  <meta property="og:description" content="Browse highlights from school events, student artwork, classroom moments, and daily life at JPPS — where learning and expression go hand in hand.">
+  <meta property="og:image" content="https://jpps-school.github.io/jpps/img/jpps_logo.webp" type="image/webp">
+  <meta property="og:url" content="https://jpps-school.github.io/jpps/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="https://jpps-school.github.io/jpps/img/jpps_logo.webp" type="image/webp">
+</head>
+<body>
+    
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+  <div class="logo-area">
+    <img src="img/jpps_logo.webp" alt="School Logo" />
+    <div class="school-name">JPPS TEACHING CURRICULUM</div>
+  </div>
+  <div class="menu-btn" onclick="toggleDrawer()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- Drawer -->
+<div class="drawer" id="navDrawer">
+  <h2>Menu</h2>
+  <div class="link-cluster">
+      <span>Home</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="index.html#why-choose">Why Choose JPPS?</a>         
+          <a href="index.html#our-principal">Our Principal</a>  
+          <a href="index.html#faculty">Our Distinguished Faculty</a> 
+          <a href="index.html#testimonials">Testimonials</a> 
+           <a href="index.html#life-at-jpps">Life At JPPS</a> 
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>About Us</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="about.html#guiding-principle">Our Guiding Principles</a>         
+          <a href="about.html#founder">Our Beloved Founder</a>
+          <a href="about.html#day-at-jpps">A Day at JPPS</a>
+          <a href="about.html#proud-moments">Our Proud Moments</a>
+          <a href="about.html#journey">Our Journey</a>
+          <a href="about.html#school-uniform">School Uniform</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Acedamics & Curriculum</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="curriculum.html#grade-level">Grade Level Curriculum</a>         
+          <a href="curriculum.html#school-calender">School Calender</a>
+          <a href="curriculum.html#allEvents">Upcoming Events</a>
+          <a href="curriculum.html#teaching-methods">Innovative Teaching Methods</a>
+          <a href="curriculum.html#assessment-system">Continuous Assessment System</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Admission Details</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="admission.html#main-requirement">Essential Requirements</a>         
+          <a href="admission.html#fee-structure">Complete Fee Structure</a>
+          <a href="admission.html#book-price">Complete Book Policy</a>
+          <a href="admission.html#child-need">What Your Child Needs</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Resources</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="resource.html#daily-updates">Daily Updates</a>         
+          <a href="resource.html#important-documents">Important Documents</a>
+          <a href="resource.html#daily-homework">Homework & assignment</a>
+          <a href="admission.html#child-need">What Your Child Needs</a>
+      </div>
+  </div>
+  <a href="facility.html">School Facility</a>
+  <div class="link-cluster">
+      <span>Gallery</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="gallery.html#school-videos">School Videos</a>         
+          <a href="gallery.html#photo-collection">Photo Collection</a>
+          <a href="gallery.html#alumni-stories">Alumni Stories</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Apply</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="apply.html#admission-steps">Three Steps for Admission</a>         
+          <a href="apply.html#application-form">Admission Form</a>
+          <a href="apply.html#affordable-fee">Affordable Fee Structure (overview)</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Contact</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="contact.html#connect-with-us">Directly Connect With Us</a>         
+          <a href="contact.html#school-location">School Location</a>   
+          <a href="contact.html#department-contacts">Department Contacts</a>   
+          <a href="contact.html#contact-form">Contact Form</a>   
+          <a href="contact.html#faq">FAQ</a>   
+      </div>
+  </div>
+</div>
+
+<!-- Optional overlay -->
+<div class="overlay" id="drawerOverlay" onclick="toggleDrawer()"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Our School Gallery</h1>
+            <p>Experience JPPS through photos and videos</p>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Video Gallery -->
+    <section class="video-gallery" id="school-videos">
+        <div class="container">
+            <h2 class="section-title">School Videos</h2>
+            <p class="section-subtitle">Watch our village school in action</p>
+            
+            <div class="video-grid">
+                <!-- Annual Day -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/M2ieo2Eqw68?si=rW2koGn-RUI8UuU7" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>Republic Day 2025</h3>
+                    <p>Speech by our little student - Parwej</p>
+                </div>
+                
+                <!-- School Tour -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/5meDpF2_hcQ?si=HdnYll9E3PRFYykO" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>Campus Tour</h3>
+                    <p>Walkthrough of our school facilities</p>
+                </div>
+                
+                <!-- Sports Day -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/lw5p5fc7Pao?si=9BcR2GNhUyZ9n0ti" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>J.P-P.S Faculty</h3>
+                    <p>Introduction by twin brothers</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/K0iPG4M52Do?si=RYobjmsqNK7jeoPB" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>Republic Day 2018</h3>
+                    <p>Sweet singing by our Drawing/music Teacher</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/TgOWNtIG21c?si=2zhKQEtbU97KtdXD" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>Teacher's Day</h3>
+                    <p>Classroom voice, stage presence</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/inRlSLphFNQ?si=2P6E97C0LFwdgrvH" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>Republic Day 2018</h3>
+                    <p>A story, a stage, a message - education changes everything</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/HudFM97Yqc8?si=i433JsgGDGDsYNct" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>Teacher's day 2021</h3>
+                    <p>Dancing like no one's watching - full of joy and energy</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/t97vW-BXuQM?si=Vo1ecJNrpFu-66SK" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>Mathematics lecture</h3>
+                    <p>Lerning by explaining - that's real understanding!</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/w1o5FczCLPM?si=yMQwgWNd_0PKX4t8" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>Teacher's day 2021</h3>
+                    <p>A tiny voice with a big heart</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/p-XFd8ITPks?si=ssaM0UL_IT0MHk-y" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>Republic Day 2020</h3>
+                    <p>Little dancers, big dreams</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/lw5p5fc7Pao?si=9BcR2GNhUyZ9n0ti" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>J.P-P.S Faculty</h3>
+                    <p>Introduction by twin brothers</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/iBnmP2MPlok?si=NsY0tm8Dc1MvKYbz" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>Republic Day 2024</h3>
+                    <p>Tiny steps, perfect rhythm</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/QRM8OhYCyo8?si=fRRZ-aq811clRc4G" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>Teacher's Day</h3>
+                    <p>A voice full of dreams and confidence</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        
+                        <iframe src="https://www.youtube.com/embed/Kt0CXy3Kc_Q?si=c989-Dms37qPNljB" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>Grace in motion</h3>
+                    <p>A dazzling dance on annual day</p>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/bPLrjKmaaW4?si=nWHJ4MN0OWNMAdAS" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>Udan</h3>
+                    <p>A powerful act echoing the voice of every girl’s right to live and learn.</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/YQCiRqFkV6M?si=zgAoK1hSY8YTTFHx" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>Teacher's day 2021</h3>
+                    <p>Choreography by 2nd class Students</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/y2DOk5wlISs?si=RNMHSlrEL66_hlpX" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>Republic Day 2019</h3>
+                    <p>Biography of J.P-P.S Founder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="photo-gallery" id="photo-collection">
+        <div class="container">
+            <h2 class="section-title">Photo Collections</h2>
+            
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="activities">Activities</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+                <button class="filter-btn" data-filter="classroom">Classroom</button>
+                <button class="filter-btn" data-filter="nature">Nature & Campus Life</button>
+            </div>
+            
+            <div class="photo-grid">
+                <!-- Event Photos -->
+                
+                <div class="photo-item events" data-category="events">
+    <img src="img/events/event1.jpg" alt="Annual Day Celebration">
+                </div>
+
+<div class="photo-item events" data-category="events">
+    <img src="img/events/event2.jpg" alt="Student Speech">
+</div>
+
+<div class="photo-item classroom" data-category="classroom">
+    <img src="img/classroom/classroom7.jpg" alt="classroom">
+</div>
+
+<div class="photo-item nature" data-category="nature">
+    <img src="img/nature/nature1.jpg" alt="nature">
+</div>
+
+<div class="photo-item sports" data-category="sports">
+    <img src="img/sports/sports2.jpg" alt="Sports">
+</div>
+
+<div class="photo-item activities" data-category="activities">
+    <img src="img/activities/activities3.jpg" alt="activities">
+</div>
+
+<div class="photo-item classroom" data-category="classroom">
+    <img src="img/classroom/classroom6.jpg" alt="classroom">
+</div>
+
+<div class="photo-item events" data-category="events">
+    <img src="img/events/event3.jpg" alt="Teacher-Student Fun">
+</div>
+
+<div class="photo-item events" data-category="events">
+    <img src="img/events/event4.jpg" alt="Stage Performance">
+</div>
+
+<div class="photo-item classroom" data-category="classroom">
+    <img src="img/classroom/classroom5.jpg" alt="classroom">
+</div>
+
+<div class="photo-item nature" data-category="nature">
+    <img src="img/nature/nature5.jpg" alt="nature">
+</div>
+
+<div class="photo-item nature" data-category="nature">
+    <img src="img/nature/nature2.jpg" alt="nature">
+</div>
+
+<div class="photo-item activities" data-category="activities">
+    <img src="img/activities/activities2.jpg" alt="activities">
+</div>
+
+<div class="photo-item nature" data-category="nature">
+    <img src="img/nature/nature4.jpg" alt="nature">
+</div>
+
+<div class="photo-item events" data-category="events">
+    <img src="img/events/event16.jpg" alt="Teacher-Student Fun">
+</div>
+
+<div class="photo-item classroom" data-category="classroom">
+    <img src="img/classroom/classroom8.jpg" alt="classroom">
+</div>
+
+<div class="photo-item events" data-category="events">
+    <img src="img/events/event5.jpg" alt="Dance Performance">
+</div>
+
+<div class="photo-item classroom" data-category="classroom">
+    <img src="img/classroom/classroom4.jpg" alt="classroom">
+</div>
+
+<div class="photo-item nature" data-category="nature">
+    <img src="img/nature/nature3.jpg" alt="nature">
+</div>
+
+<div class="photo-item classroom" data-category="classroom">
+    <img src="img/classroom/classroom9.jpg" alt="classroom">
+</div>
+
+<div class="photo-item sports" data-category="sports">
+    <img src="img/sports/sports1.jpg" alt="Sports">
+</div>
+
+<div class="photo-item events" data-category="events">
+    <img src="img/events/event6.jpg" alt="Lighting Ceremony">
+</div>
+
+<div class="photo-item events" data-category="events">
+    <img src="img/events/event7.jpg" alt="Anchor Hosting">
+</div>
+
+<div class="photo-item activities" data-category="activities">
+    <img src="img/activities/activities1.jpg" alt="activities">
+</div>
+
+<div class="photo-item classroom" data-category="classroom">
+    <img src="img/classroom/classroom10.jpg" alt="classroom">
+</div>
+
+<div class="photo-item events" data-category="events">
+    <img src="img/events/event8.jpg" alt="Parent Audience">
+</div>
+
+<div class="photo-item activities" data-category="activities">
+    <img src="img/activities/activities4.jpg" alt="activities">
+</div>
+
+<div class="photo-item classroom" data-category="classroom">
+    <img src="img/classroom/classroom3.jpg" alt="classroom">
+</div>
+
+<div class="photo-item sports" data-category="sports">
+    <img src="img/sports/sports3.jpg" alt="Sports">
+</div>
+
+<div class="photo-item nature" data-category="nature">
+    <img src="img/nature/nature6.jpg" alt="nature">
+</div>
+
+<div class="photo-item events" data-category="events">
+    <img src="img/events/event9.jpg" alt="Skits and Plays">
+</div>
+
+<div class="photo-item events" data-category="events">
+    <img src="img/events/event10.jpg" alt="Student Singing">
+</div>
+
+<div class="photo-item nature" data-category="nature">
+    <img src="img/nature/nature7.jpg" alt="nature">
+</div>
+
+<div class="photo-item activities" data-category="activities">
+    <img src="img/activities/activities5.jpg" alt="activities">
+</div>
+
+<div class="photo-item events" data-category="events">
+    <img src="img/events/event11.jpg" alt="Group Photo">
+</div>
+
+<div class="photo-item events" data-category="events">
+    <img src="img/events/event12.jpg" alt="Teacher Performance">
+</div>
+
+<div class="photo-item events" data-category="events">
+    <img src="img/events/event13.jpg" alt="Prize Distribution">
+</div>
+
+<div class="photo-item nature" data-category="nature">
+    <img src="img/nature/nature11.jpg" alt="nature">
+</div>
+
+<div class="photo-item classroom" data-category="classroom">
+    <img src="img/classroom/classroom2.jpg" alt="classroom">
+</div>
+
+<div class="photo-item nature" data-category="nature">
+    <img src="img/nature/nature8.jpg" alt="nature">
+</div>
+
+<div class="photo-item activities" data-category="activities">
+    <img src="img/activities/activities6.jpg" alt="activities">
+</div>
+
+<div class="photo-item nature" data-category="nature">
+    <img src="img/nature/nature12.jpg" alt="nature">
+</div>
+
+<div class="photo-item events" data-category="events">
+    <img src="img/events/event14.jpg" alt="Group Dance">
+</div>
+
+<div class="photo-item classroom" data-category="classroom">
+    <img src="img/classroom/classroom11.jpg" alt="classroom">
+</div>
+
+<div class="photo-item nature" data-category="nature">
+    <img src="img/nature/nature9.jpg" alt="nature">
+</div>
+
+<div class="photo-item events" data-category="events">
+    <img src="img/events/event15.jpg" alt="Closing Ceremony">
+</div>
+
+<div class="photo-item nature" data-category="nature">
+    <img src="img/nature/nature13.jpg" alt="nature">
+</div>
+
+<div class="photo-item classroom" data-category="classroom">
+    <img src="img/classroom/classroom1.jpg" alt="classroom">
+</div>
+        
+            </div>
+        </div>
+    </section>
+
+    <!-- Alumni Videos -->
+    <section class="alumni-videos" id="alumni-stories">
+        <div class="container">
+            <h2 class="section-title">Alumni Stories</h2>            
+                        
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/obtpkYR7xGg?si=n2JWz6AWqyr-gKl2" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>Farhat Jahan</h3>
+                    <p>Government Teacher</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/HeipVXaiLCs?si=3Hb3Vw90EbXjDBRS" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <h3>Md Gulfaraz</h3>
+                    <p>Government teacher</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Same footer as other pages -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>JPPS School</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Fattuchak Road<br>Banka City, IN 813224</p>
+                    <p><i class="fas fa-phone"></i> +91 9661560039,<br>+91 8084968563</p>
+                    <p><i class="fas fa-envelope"></i> jpps.school.edu@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="curriculum.html">Academics</a></li>
+                        <li><a href="admission.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="https://jpps-school.github.io/drawing-board">Drawing Board</a></li>
+                        <li><a href="apply.html#application-form">Admission Form</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="curriculum.html#school-calender">School Calendar</a></li>
+                        <li><a href="https://jpps-resultportal.onrender.com">Result Portal</a></li>
+                        <li><a href="resource.html#important-documents">Important Documents</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100054614447260" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/9661716014" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/@j.p-p.s___team?si=xop_phLMwGV3TeU0" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="tel:+919661716014"><i class="fas fa-phone-alt"></i></a>
+                    </div>
+                    <form id="subscriptionForm">
+                      <div class="newsletter">
+                        <input type="text" name="formType" value="subscription" hidden>
+                        <input type="email" placeholder="Your Email" name="email" required>
+                        <button class="subscribe-btn" type="submit">Subscribe</button>
+                      </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 JPPS School. All Rights Reserved.</p>
+                <a href="https://wa.me/+919661854282" style="text-decoration:none;"><p style="color:#55c1ff">• Build and Designed by Mahi Devs</p></a>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-condition.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- overlay for form submission -->
+    <div id="formOverlay">
+        <div>
+            <span></span>
+            <p>Submitting...</p>
+        </div>
+    </div>
+    
+    <script src="js/sidePages.js"></script>
+    <script>
+        // Gallery Filter Functionality
+const filterButtons = document.querySelectorAll('.filter-btn');
+const photoItems = document.querySelectorAll('.photo-item');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked button
+        this.classList.add('active');
+        
+        const filterValue = this.getAttribute('data-filter');
+        
+        photoItems.forEach(item => {
+            if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
+
+// Load More Button (simplified example)
+document.getElementById('loadMore')?.addEventListener('click', function() {
+    // In real implementation, this would load more photos via AJAX
+    alert('More photos would load here in actual implementation');
+    this.style.display = 'none';
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPPS School - Excellence in Education</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="description" content="JPPS School is a nurturing and dynamic learning environment dedicated to shaping young minds with creativity, discipline, and values. Founded with a vision to provide quality education from Nursery to Class 10, JPPS emphasizes not only academics but also the holistic development of every student.">
+  <meta name="keywords" content="JPPS, JPPS school, about jpps, jpps teaching curriculum">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="James Proneir">
+  <meta property="og:title" content="J-P-P.S Teaching Curriculum">
+  <meta property="og:description" content="JPPS School is a nurturing and dynamic learning environment dedicated to shaping young minds with creativity, discipline, and values. Founded with a vision to provide quality education from Nursery to Class 10, JPPS emphasizes not only academics but also the holistic development of every student.">
+  <meta property="og:image" content="https://jpps-school.github.io/jpps/img/jpps_logo.webp" type="image/webp">
+  <meta property="og:url" content="https://jpps-school.github.io/jpps/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="https://jpps-school.github.io/jpps/img/jpps_logo.webp" type="image/webp">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "J.P-P.S Teaching Curriculum",  
+      "url": "https://jpps-school.github.io/jpps/",
+      "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://jpps-school.github.io/drawing-board/search?q={jpps school}",
+          "query-input": "required name=jpps school"
+       }
+    }
+  </script>
+    <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+  <div class="logo-area">
+    <img src="img/jpps_logo.webp" alt="School Logo" />
+    <div class="school-name">JPPS TEACHING CURRICULUM</div>
+  </div>
+  <div class="menu-btn" onclick="toggleDrawer()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- Drawer -->
+<div class="drawer" id="navDrawer">
+  <h2>Menu</h2>
+  <div class="link-cluster">
+      <span>Home</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="index.html#why-choose">Why Choose JPPS?</a>         
+          <a href="index.html#our-principal">Our Principal</a>  
+          <a href="index.html#faculty">Our Distinguished Faculty</a> 
+          <a href="index.html#testimonials">Testimonials</a> 
+           <a href="index.html#life-at-jpps">Life At JPPS</a> 
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>About Us</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="about.html#guiding-principle">Our Guiding Principles</a>         
+          <a href="about.html#founder">Our Beloved Founder</a>
+          <a href="about.html#day-at-jpps">A Day at JPPS</a>
+          <a href="about.html#proud-moments">Our Proud Moments</a>
+          <a href="about.html#journey">Our Journey</a>
+          <a href="about.html#school-uniform">School Uniform</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Acedamics & Curriculum</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="curriculum.html#grade-level">Grade Level Curriculum</a>         
+          <a href="curriculum.html#school-calender">School Calender</a>
+          <a href="curriculum.html#allEvents">Upcoming Events</a>
+          <a href="curriculum.html#teaching-methods">Innovative Teaching Methods</a>
+          <a href="curriculum.html#assessment-system">Continuous Assessment System</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Admission Details</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="admission.html#main-requirement">Essential Requirements</a>         
+          <a href="admission.html#fee-structure">Complete Fee Structure</a>
+          <a href="admission.html#book-price">Complete Book Policy</a>
+          <a href="admission.html#child-need">What Your Child Needs</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Resources</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="resource.html#daily-updates">Daily Updates</a>         
+          <a href="resource.html#important-documents">Important Documents</a>
+          <a href="resource.html#daily-homework">Homework & assignment</a>
+          <a href="admission.html#child-need">What Your Child Needs</a>
+      </div>
+  </div>
+  <a href="facility.html">School Facility</a>
+  <div class="link-cluster">
+      <span>Gallery</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="gallery.html#school-videos">School Videos</a>         
+          <a href="gallery.html#photo-collection">Photo Collection</a>
+          <a href="gallery.html#alumni-stories">Alumni Stories</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Apply</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="apply.html#admission-steps">Three Steps for Admission</a>         
+          <a href="apply.html#application-form">Admission Form</a>
+          <a href="apply.html#affordable-fee">Affordable Fee Structure (overview)</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Contact</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="contact.html#connect-with-us">Directly Connect With Us</a>         
+          <a href="contact.html#school-location">School Location</a>   
+          <a href="contact.html#department-contacts">Department Contacts</a>   
+          <a href="contact.html#contact-form">Contact Form</a>   
+          <a href="contact.html#faq">FAQ</a>   
+      </div>
+  </div>
+</div>
+
+<!-- Optional overlay -->
+<div class="overlay" id="drawerOverlay" onclick="toggleDrawer()"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to JPPS School</h1>
+            <p class="hero-subtitle">Where Excellence Meets Opportunity</p>
+            <div class="hero-buttons">
+                <a href="apply.html" class="btn btn-primary">Apply Now</a>
+                <a href="about.html" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Announcements Section -->
+    <section class="announcements">
+        <div class="container">
+            <h2 class="section-title">Latest Announcements</h2>
+            <div class="announcement-slider">
+                
+            </div>
+            <div class="slider-controls">
+                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose JPPS?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+    <div class="feature-icon">
+        <i class="fas fa-user-shield"></i>
+    </div>
+    <h3>Education with Discipline</h3>
+    <p>JPPS shapes not just academic excellence but also instills discipline, manners, and moral values from an early age.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Academic Excellence</h3>
+                    <p>Consistently ranked among top schools with 95%+ board results.</p>
+                </div>
+                <div class="feature-card">
+    <div class="feature-icon">
+        <i class="fas fa-brain"></i>
+    </div>
+    <h3>Early Reasoning Skills</h3>
+    <p>Logical reasoning taught from Class 1 to enhance thinking power and boost young minds.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Creative Arts</h3>
+                    <p>Comprehensive arts education with professional instructor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Add this after Features section -->
+<section class="founder-section">
+    <div class="container">
+        <h2 class="section-title">Our Visionary Founder</h2>
+        <div class="founder-content">
+            <div class="founder-image">
+                <img src="img/founder.jpg" alt="Dr. M. Z. Alma">
+            </div>
+            <div class="founder-details">
+                <h3>Dr. M. Z. Alam</h3>
+                <p class="founder-title">Educator | Visionary | Social Reformer</p>
+                <div class="founder-quote">                    
+                    <p>Time passes but memory remains so always appreciate the time because time is so valuable.</p>                   
+                </div>
+                <p class="founder-bio">With 10+ years of experience in education, Dr. M Z alam established JPPS in 1996 with a vision to create an institution that combines academic excellence with holistic development. His innovative teaching methodologies have revolutionized primary education in the region.</p>
+                <a href="about.html#founder" class="btn btn-outline">Read Full Biography</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add after Founder section -->
+<section class="principal-section" id="our-principal">
+    <div class="container">
+        <h2 class="section-title">Our Principal</h2>
+        <div class="principal-content">
+            <div class="principal-details">
+                <h3>Md Quamar</h3>
+                <p class="principal-title">Principal | Educator | Administrator</p>
+                <div class="principal-message">
+                    <p>"Dear success, i don't know where you are but one day i will find you."</p>
+                </div>
+                <ul class="principal-achievements">
+  <li><i class="fas fa-people-carry"></i> Builds strong teacher-student-parent connection</li>
+  <li><i class="fas fa-book-reader"></i> Designs unique lessons to fit rural student needs</li>
+  <li><i class="fas fa-star"></i> Loved by students for friendly and motivational teaching</li>
+  <li><i class="fas fa-chalkboard-teacher"></i> Personally teaches core subjects daily</li>
+  <li><i class="fas fa-user-cog"></i> Balances teaching, administration & student care</li>
+  <li><i class="fas fa-seedling"></i> B.Sc. Agriculture – brings nature into learning</li>
+                </ul>            
+            </div>
+            <div class="principal-image">
+                <img src="img/principal.jpg" alt="Md Quamar">
+                <div class="principal-contact">
+                    <a href="mailto: rajasif140@gmail.com"><i class="fas fa-envelope"></i>rajasif140@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add this after Testimonials section -->
+<section class="faculty-section" id="faculty">
+    <div class="container">
+        <h2 class="section-title">Meet Our Distinguished Faculty</h2>
+        <p class="section-subtitle">Dedicated educators shaping young minds</p>
+        
+        <div class="faculty-grid">
+            <!-- Teacher 1 -->
+            <div class="teacher-card">
+                <div class="teacher-image">
+                    <img src="img/zahidahPerween.jpg" alt="Mrs. Zahidah Perween">
+                    <div class="teacher-social">
+                        <a href="tel:+919661560039"><i class="fas fa-phone"></i></a>
+                        <a href="https://wa.me/+919661560039" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="teacher-info">
+                    <h3>Mrs. Zahidah Perween</h3>
+                    <p class="subject">Lead primary teacher</p>
+                    <p class="qualification">BA Honours in Urdu, 30+ years experience</p>
+                    <div class="teacher-expertise">
+                        <span>Literature</span>
+                        <span>Moral values</span>
+                        <span>Social Science</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Teacher 2 -->
+            <div class="teacher-card">
+                <div class="teacher-image">
+                    <img src="img/zafarSanu.jpg" alt="Mr. Zafar Sanu">
+                    <div class="teacher-social">
+                        <a href="tel:+918084968563"><i class="fas fa-phone"></i></a>
+                        <a href="https://wa.me/+918084968563" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="teacher-info">
+                    <h3>Mr. Zafar Sanu</h3>
+                    <p class="subject">Manage Extracurricular activities & technical support</p>
+                    <p class="qualification">10+ years of experience</p>
+                    <div class="teacher-expertise">
+                        <span>Music</span>
+                        <span>Drawing</span>
+                        <span>Classroom Management</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Teacher 3 -->
+            <div class="teacher-card">
+                <div class="teacher-image">
+                    <img src="img/quamar.jpg" alt="Mr. Md Quamar">
+                    <div class="teacher-social">
+                        <a href="tel:+919661716014"><i class="fas fa-phone"></i></a>
+                        <a href="https://wa.me/+919661716014" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="teacher-info">
+                    <h3>Mr. Md Quamar</h3>
+                    <p class="subject">Principal & senior educator</p>
+                    <p class="qualification">BSc agriculture, 12+ years of experience</p>
+                    <div class="teacher-expertise">
+                        <span>Science</span>
+                        <span>Mathematics</span>
+                        <span>Reasoning</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Teacher 4 -->
+            <div class="teacher-card">
+                <div class="teacher-image">
+                    <img src="img/indu.jpg" alt="Ms. Indu Devi">
+                    <div class="teacher-social">
+                        <a href="tel:+919608308485"><i class="fas fa-phone"></i></a>
+                        <a href="https://wa.me/+919608308485" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="teacher-info">
+                    <h3>Shri. Indu Devi</h3>
+                    <p class="subject">Pre-primary Teacher</p>
+                    <p class="qualification">Builds strong base for reading and writing</p>
+                    <div class="teacher-expertise">
+                        <span>Foundation literacy</span>
+                        <span>Classroom discipline</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add after Faculty section -->
+<section class="facilities-section">
+    <div class="container">
+        <h2 class="section-title">Our Facilities</h2>
+        <p class="section-subtitle">Creating an optimal learning environment</p>
+        
+        <div class="facilities-grid">
+            <!-- Facility 1 -->
+            <div class="facility-card">
+                <div class="facility-icon">
+                    <i class="fas fa-bus"></i>
+                </div>
+                <h3>Transportation</h3>
+                <ul class="facility-features">
+                    <li>GPS-enabled school vans</li>
+                    <li>30+ villages covered by van</li>
+                    <li>Real-time tracking for parents</li>
+                </ul>
+                <div class="facility-image">
+                    <img src="img/facility/transportation.jpg" alt="School Transportation">
+                </div>
+            </div>
+            
+            <!-- Facility 2 -->
+            <div class="facility-card">
+                <div class="facility-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3>Smart Security</h3>
+                <ul class="facility-features">
+                    <li>10+ CCTV cameras campus-wide</li>
+                    <li>24/7 security monitoring</li>
+                    <li>Visitor management system</li>
+                </ul>
+                <div class="facility-image">
+                    <img src="img/facility/camera.jpg" alt="CCTV Facility">
+                </div>
+            </div>
+            
+            <!-- Facility 3 -->
+            <div class="facility-card">
+  <div class="facility-icon">
+    <i class="fas fa-briefcase-medical"></i>
+  </div>
+  <h3>First Aid & Student Care</h3>
+  <ul class="facility-features">
+    <li>Basic first-aid supplies on campus</li>
+    <li>Immediate response to minor injuries</li>
+    <li>Parental contact in emergencies</li>
+    <li>Safe, caring environment for all students</li>
+  </ul>
+  <div class="facility-image">
+    <img src="img/facility/firstAid.jpg" alt="School Medical Facility">
+  </div>
+            </div>
+            <!-- Facility 4 -->
+            <div class="facility-card">
+  <div class="facility-icon">
+    <i class="fas fa-bed"></i>
+  </div>
+  <h3>Hostel Accommodation</h3>
+  <ul class="facility-features">
+    <li>Only for boys</li>
+    <li>Neat & secure environment</li>
+    <li>24×7 warden supervision</li>
+    <li>Healthy daily routine & study hours</li>
+  </ul>
+  <div class="facility-image">
+    <img src="img/facility/hostel.jpg" alt="School Hostel">
+  </div>
+            </div>
+        </div>
+        
+        <div class="text-center">
+            <a href="facility.html" class="btn btn-primary">Explore All Facilities</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Parents & Students Say</h2>
+            <div class="testimonial-slider">
+                
+            </div>
+            <div class="testimonial-dots">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Calendar -->
+    <section class="events">
+        <div class="container">
+            <h2 class="section-title">School Calender</h2>
+            <div class="events-calendar">              
+                <div class="calendar-grid">
+                   <iframe src="https://calendar.google.com/calendar/embed?src=c163bc4d82b9ce61d72f4a9ec203d3c72fd4912a45af85142b0f051507e511df%40group.calendar.google.com&src=en.indian%23holiday%40group.v.calendar.google.com&ctz=Asia%2FKolkata" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                </div>
+                <div class="text-center">
+            <a href="curriculum.html#allEvents" class="btn btn-primary">See all the Events <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <div class="container">
+            <div class="quick-link-card">
+                <h3>Admissions</h3>
+                <p>Learn about our admission process and requirements.</p>
+                <a href="details.html" class="link-btn">View Details <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="quick-link-card">
+                <h3>Academics</h3>
+                <p>Explore our curriculum and academic programs.</p>
+                <a href="curriculum.html" class="link-btn">View Details <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="quick-link-card">
+                <h3>School Calendar</h3>
+                <p>View important dates and holidays.</p>
+                <a href="curriculum.html#allEvents" class="link-btn">View Details <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+<section class="gallery-section" id="life-at-jpps">
+    <div class="container">
+        <h2 class="section-title">Life at JPPS</h2>
+        <p class="section-subtitle">Capturing our daily learning journey</p>
+        
+        <div class="gallery-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="classroom">Classrooms</button>
+            <button class="filter-btn" data-filter="activities">Activities</button>
+            <button class="filter-btn" data-filter="events">Events</button>
+            <button class="filter-btn" data-filter="sports">Sports</button>
+            <button class="filter-btn" data-filter="nature">Nature & Campus life</button>
+        </div>
+        
+        <div class="gallery-grid">
+            <!-- Classroom Images -->
+            <div class="gallery-item classroom" data-category="classroom">
+                <img src="img/classroom/classroom4.jpg" alt="Students in class">
+                <div class="gallery-overlay">
+                    <div class="gallery-overlay">
+    <div class="overlay-content">
+        <h3>Guided Classwork Time</h3>
+        <p>Pre-primary students learning with focus under their teacher's guidance</p>
+    </div>
+</div>
+                </div>
+            </div>
+            
+            <!-- Village School Activities -->
+            <div class="gallery-item activities" data-category="activities">
+                <img src="img/activities/activities1.jpg" alt="activities">
+                <div class="gallery-overlay">
+    <div class="overlay-content">
+        <h3>Morning Assembly Lines</h3>
+        <p>Students standing in perfect rows, ready to begin the day with discipline</p>
+    </div>
+</div>
+            </div>
+            
+            <!-- Rural School Events -->
+            <div class="gallery-item events" data-category="events">
+                <img src="img/events/event12.jpg" alt="Annual day">
+                <div class="gallery-overlay">
+    <div class="overlay-content">
+        <h3>Joyful Celebrations</h3>
+        <p>Teachers and students sharing smiles and laughter during a school event</p>
+    </div>
+</div>
+            </div>
+            
+            <!-- Village Sports -->
+            <div class="gallery-item sports" data-category="sports">
+                <img src="img/sports/sports1.jpg" alt="sports">
+                <div class="gallery-overlay">
+    <div class="overlay-content">
+        <h3>Sporty Smiles</h3>
+        <p>Students posing proudly for the camera during the sports</p>
+    </div>
+</div>
+            </div>
+            
+            <!-- Nature/Rural Setting -->
+            <div class="gallery-item nature" data-category="nature">
+                <img src="img/nature/nature1.jpg" alt="nature">
+                <div class="gallery-overlay">
+    <div class="overlay-content">
+        <h3>Everyday Campus Moments</h3>
+        <p>Students capturing memories with friends and a teacher during a joyful school day</p>
+    </div>
+</div>
+            </div>
+            
+            <!-- Traditional Learning -->
+            <div class="gallery-item classroom" data-category="classroom">
+                <img src="img/classroom/classroom7.jpg" alt="classroom">
+                <div class="gallery-overlay">
+    <div class="overlay-content">
+        <h3>Attentive Minds at Work</h3>
+        <p>Students listening carefully and engaging in the classroom lecture</p>
+    </div>
+</div>
+            </div>
+            
+            <!-- Village Crafts -->
+            <div class="gallery-item events" data-category="events">
+                <img src="img/events/event8.jpg" alt="event">
+                <div class="gallery-overlay">
+    <div class="overlay-content">
+        <h3>Inspiring Words, Young Voice</h3>
+        <p>A young student delivering a speech on great leaders during the Annual Day celebration</p>
+    </div>
+</div>
+            </div>
+            
+            <!-- Rural Sports -->
+            <div class="gallery-item sports" data-category="sports">
+                <img src="img/sports/sports2.jpg" alt="sports">
+                <div class="gallery-overlay">
+    <div class="overlay-content">
+        <h3>Confident & Cheerful</h3>
+        <p>Girls striking a proud pose during their local sports event</p>
+    </div>
+</div>
+            </div>
+        </div>
+        
+        <div class="text-center">
+            <a href="gallery.html" class="btn btn-primary">View Full Gallery</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>JPPS School</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Fattuchak Road<br>Banka City, IN 813224</p>
+                    <p><i class="fas fa-phone"></i> +91 9661560039,<br>+91 8084968563</p>
+                    <p><i class="fas fa-envelope"></i> jpps.school.edu@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="curriculum.html">Academics</a></li>
+                        <li><a href="admission.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="https://jpps-school.github.io/drawing-board">Drawing Board</a></li>
+                        <li><a href="apply.html#application-form">Admission Form</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="curriculum.html#school-calender">School Calendar</a></li>
+                        <li><a href="https://jpps-resultportal.onrender.com">Result Portal</a></li>
+                        <li><a href="resource.html#important-documents">Important Documents</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100054614447260" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/9661716014" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/@j.p-p.s___team?si=xop_phLMwGV3TeU0" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="tel:+919661716014"><i class="fas fa-phone-alt"></i></a>
+                    </div>
+                    <form id="subscriptionForm">
+                      <div class="newsletter">
+                        <input type="text" name="formType" value="subscription" hidden>
+                        <input type="email" placeholder="Your Email" name="email" required>
+                        <button class="subscribe-btn" type="submit">Subscribe</button>
+                      </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 JPPS School. All Rights Reserved.</p>
+                <p style="color:#55c1ff">• Build and Designed by Mahi Devs</p>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-condition.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- overlay for form submission -->
+    <div id="formOverlay">
+        <div>
+            <span></span>
+            <p>Submitting...</p>
+        </div>
+    </div>
+
+    <div id="install-box">
+       <div id="app-info">
+           <img src="images/jpps_logo.jpg">
+           <div id="app-name">JPPS School</div>
+       </div>
+       <p>Get quick access anytime! Install our app on your device for a faster, smoother experience.</p>
+       <div id="install-btn">Install</div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

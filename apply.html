@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | JPPS Village School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <meta name="description" content="We welcome students from Nursery to Class 10 who are eager to learn, grow, and thrive in a creative and disciplined environment. This page provides all the information you need to apply for admission, including eligibility criteria, required documents, and steps for online or in-person application. Start your child’s educational journey with JPPS today!">
+  <meta name="keywords" content="JPPS, JPPS school, about jpps, jpps teaching curriculum">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="James Proneir">
+  <meta property="og:title" content="J-P-P.S Teaching Curriculum">
+  <meta property="og:description" content="We welcome students from Nursery to Class 10 who are eager to learn, grow, and thrive in a creative and disciplined environment. This page provides all the information you need to apply for admission, including eligibility criteria, required documents, and steps for online or in-person application. Start your child’s educational journey with JPPS today!">
+  <meta property="og:image" content="https://jpps-school.github.io/jpps/img/jpps_logo.webp" type="image/webp">
+  <meta property="og:url" content="https://jpps-school.github.io/jpps/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="https://jpps-school.github.io/jpps/img/jpps_logo.webp" type="image/webp">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+  <div class="logo-area">
+    <img src="img/jpps_logo.webp" alt="School Logo" />
+    <div class="school-name">JPPS TEACHING CURRICULUM</div>
+  </div>
+  <div class="menu-btn" onclick="toggleDrawer()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- Drawer -->
+<div class="drawer" id="navDrawer">
+  <h2>Menu</h2>
+  <div class="link-cluster">
+      <span>Home</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="index.html#why-choose">Why Choose JPPS?</a>         
+          <a href="index.html#our-principal">Our Principal</a>  
+          <a href="index.html#faculty">Our Distinguished Faculty</a> 
+          <a href="index.html#testimonials">Testimonials</a> 
+           <a href="index.html#life-at-jpps">Life At JPPS</a> 
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>About Us</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="about.html#guiding-principle">Our Guiding Principles</a>         
+          <a href="about.html#founder">Our Beloved Founder</a>
+          <a href="about.html#day-at-jpps">A Day at JPPS</a>
+          <a href="about.html#proud-moments">Our Proud Moments</a>
+          <a href="about.html#journey">Our Journey</a>
+          <a href="about.html#school-uniform">School Uniform</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Acedamics & Curriculum</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="curriculum.html#grade-level">Grade Level Curriculum</a>         
+          <a href="curriculum.html#school-calender">School Calender</a>
+          <a href="curriculum.html#allEvents">Upcoming Events</a>
+          <a href="curriculum.html#teaching-methods">Innovative Teaching Methods</a>
+          <a href="curriculum.html#assessment-system">Continuous Assessment System</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Admission Details</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="admission.html#main-requirement">Essential Requirements</a>         
+          <a href="admission.html#fee-structure">Complete Fee Structure</a>
+          <a href="admission.html#book-price">Complete Book Policy</a>
+          <a href="admission.html#child-need">What Your Child Needs</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Resources</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="resource.html#daily-updates">Daily Updates</a>         
+          <a href="resource.html#important-documents">Important Documents</a>
+          <a href="resource.html#daily-homework">Homework & assignment</a>
+          <a href="admission.html#child-need">What Your Child Needs</a>
+      </div>
+  </div>
+  <a href="facility.html">School Facility</a>
+  <div class="link-cluster">
+      <span>Gallery</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="gallery.html#school-videos">School Videos</a>         
+          <a href="gallery.html#photo-collection">Photo Collection</a>
+          <a href="gallery.html#alumni-stories">Alumni Stories</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Apply</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="apply.html#admission-steps">Three Steps for Admission</a>         
+          <a href="apply.html#application-form">Admission Form</a>
+          <a href="apply.html#affordable-fee">Affordable Fee Structure (overview)</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Contact</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="contact.html#connect-with-us">Directly Connect With Us</a>         
+          <a href="contact.html#school-location">School Location</a>   
+          <a href="contact.html#department-contacts">Department Contacts</a>   
+          <a href="contact.html#contact-form">Contact Form</a>   
+          <a href="contact.html#faq">FAQ</a>   
+      </div>
+  </div>
+</div>
+
+<!-- Optional overlay -->
+<div class="overlay" id="drawerOverlay" onclick="toggleDrawer()"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Apply for Admission</h1>
+            <p>Join our School and get best quality education</p>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+  
+    <!-- Application Process -->
+    <section class="process-section" id="admission-steps">
+        <div class="container">
+            <h2 class="section-title">Simple 3-Step Admission</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Submit Form</h3>
+                    <p>Fill this application or visit school</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <i class="fas fa-handshake"></i>
+                    <h3>Parent Meeting</h3>
+                    <p>Informal chat with principal</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <i class="fas fa-rupee-sign"></i>
+                    <h3>Pay Fees</h3>
+                    <p>Affordable village rates</p>
+                </div>
+            </div>
+            <div class="process-note">
+                <i class="fas fa-info-circle"></i>
+                <p>No entrance tests for addmission | Documents can be submitted later</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="application-form" id="application-form">
+        <div class="container">
+            <h2 class="section-title">Application Form</h2>
+            
+            <form id="admissionForm">
+                <input type="text" name="formType" value="registration" hidden>
+                <!-- Student Details -->
+                <fieldset>
+                    <legend><i class="fas fa-child"></i> Student Details</legend>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="studentName">Full Name*</label>
+                            <input type="text" id="studentName" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="studentImage">Student Image*</label>
+                            <input type="file" id="studentImage" accept="image/*" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="dob">Date of Birth*</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="gender">Gender*</label>
+                            <select id="gender" name="gender" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="grade">Applying for Grade*</label>
+                            <select id="grade" name="grade" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Nursery">Nursery</option>
+                                <option value="LKG">Lower Kindergarten</option>
+                                <option value="UKG">Upper Kindergarten</option>
+                                <option value="1">Grade 1</option>
+                                <option value="2">Grade 2</option>
+                                <option value="3">Grade 3</option>
+                                <option value="4">Grade 4</option>
+                                <option value="5">Grade 5</option>
+                                <option value="6">Grade 6</option>
+                                <option value="7">Grade 7</option>
+                                <option value="8">Grade 8</option>
+                                <option value="9">Grade 9</option>
+                                <option value="10">Grade 10</option>
+                                <!-- Up to Grade 10 -->
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="previousSchool">Previous School (if any)</label>
+                        <input type="text" id="previousSchool" name="prevSchool">
+                    </div>
+                </fieldset>
+                
+                <!-- Parent/Guardian Details -->
+                <fieldset>
+                    <legend><i class="fas fa-users"></i> Parent/Guardian Details</legend>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fatherName">Father's Name*</label>
+                            <input type="text" id="fatherName" name="fatherName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="fatherMobile">Father's Mobile*</label>
+                            <input type="tel" id="fatherMobile" name="fatherMobile" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="motherName">Mother's Name*</label>
+                            <input type="text" id="motherName" name="motherName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="motherMobile">Mother's Mobile</label>
+                            <input type="tel" id="motherMobile" name="motherMobile">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address*</label>
+                        <input id="email" name="email" type="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Village Address*</label>
+                        <textarea id="address" name="address" rows="3" required style="resize:vertical;"></textarea>
+                        <p class="hint">Include nearby landmark if available</p>
+                    </div>
+                </fieldset>
+                
+                <!-- Transportation -->
+                <fieldset>
+                    <legend><i class="fas fa-bus"></i> Transportation Needs</legend>
+                    
+                    <div class="form-group radio-group">
+                        <label>Require School Transport?</label>
+                        <div class="radio-options">
+                            <label>
+                                <input type="radio" name="transport" value="Yes" onclick="toogleOptions(true,'transportOptions')" checked> 
+                                Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="transport" value="No" onclick="toogleOptions(false,'transportOptions')"> 
+                                No, we'll arrange
+                            </label>
+                        </div>
+                    </div>
+                    
+                 <div id="transportOptions">
+                    <div class="form-group" id="villageField">
+                        <label for="village">Your Village*</label>
+                        <select id="village" name="village" required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="Main Village">Main Village</option>
+                            <option value="North Settlement">North Settlement</option>
+                            <option value="River Side">River Side</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                 </div>
+                </fieldset>
+                
+                <fieldset>
+  <legend><i class="fas fa-bed"></i> Hostel Accommodation</legend>
+
+  <!-- Hostel Required -->
+  <div class="form-group radio-group">
+    <label>Require Hostel Facility?</label>
+    <div class="radio-options">
+      <label>
+        <input type="radio" name="hostel" value="Yes" onclick="toogleOptions(true,'hostleOptions')" checked>
+        Yes
+      </label>
+      <label>
+        <input type="radio" name="hostel" value="No" onclick="toogleOptions(false,'hostleOptions')">
+        No, day scholar
+      </label>
+    </div>
+  </div>
+
+  <!-- Meal Preference -->
+ <div id="hostleOptions">
+  <div class="form-group" id="mealField">
+    <label for="meal">Meal Preference*</label>
+    <select id="meal" name="meal" required>
+      <option value="" disabled selected>Select</option>
+      <option value="Vegetarian">Vegetarian</option>
+      <option value="Non-Vegetarian">Non-Vegetarian</option>
+    </select>
+  </div>
+
+  <!-- Medical Condition -->
+  <div class="form-group" id="medicalConditionField">
+    <label for="medical">Any Medical Condition?</label>
+    <input type="text" id="medical" name="medical" placeholder="e.g., Asthma, Allergy (optional)">
+  </div>
+
+  <!-- Emergency Contact -->
+  <div class="form-group" id="emergencyField">
+    <label for="emergencyContact">Emergency Contact Number*</label>
+    <input type="tel" id="emergencyContact" name="emergencyContact" required>
+  </div>
+ </div>
+                </fieldset>
+                
+                <!-- Documents (Optional) -->
+                <fieldset>
+                    <legend><i class="fas fa-file-upload"></i> Documents (Can Submit Later)</legend>
+                    
+                    <div class="document-list">
+                        <p>Required eventually:</p>
+                        <ul>
+                            <li>Birth Certificate</li>
+                            <li>Aadhaar Card (if available)</li>
+                            <li>2 Passport Photos</li>
+                            <li>Previous School TC (for Grade 2+)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="documents">Upload Now (Optional)</label>
+                        <input type="file" id="documents" accept="image/*" multiple>
+                        <p class="hint">Can bring to school later</p>
+                    </div>
+                </fieldset>
+                
+                <!-- Submission -->
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Submit Application
+                    </button>
+                    <p class="note">We'll contact you within 3 days to visit school</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Fee Structure -->
+    <section class="fee-section" id="affordable-fee">
+        <div class="container">
+            <h2 class="section-title">Affordable Fee Structure</h2>
+            
+            <div class="fee-cards">
+                <div class="fee-card">
+                    <div class="fee-amount">Tution</div>
+                      <p>Our monthly tuition starts from <strong>₹330 for Nursery</strong> and goes up to <strong>₹500 for Grade 10</strong>.</p>
+                </div>
+                
+                <div class="fee-card">
+                    <div class="fee-amount">Transportation</div>
+                      <p>Transportation is optional starting from<strong>₹500/month to ₹1,300/month</strong> depending on the distance.</p>
+                </div>
+                
+                <div class="fee-card">
+                    <div class="fee-amount">Hostel</div>
+                    <p>Hostel facilities are available for students from nursery onwards, offering a safe and nurturing environment with 24/7 supervision. The monthly hostel fee is <strong>₹3,000</strong>, which includes lodging, meals, and basic care. Seats are limited and allotted on a first-come, first-served basis.</p>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="admission.html#fee-structure" style="text-decoration:none;"><button  class="btn btn-outline">View Full Fee Structure</button></a>
+            </div><br><br>
+            
+            <div class="fee-notes">
+                <div class="note-card">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h4>Scholarships Available</h4>
+                    <p>For low-income families (contact principal)</p>
+                </div>
+                <div class="note-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h4>Payment Options</h4>
+                    <p>Monthly/Quarterly/Yearly - Cash or UPI accepted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Same footer as other pages -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>JPPS School</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Fattuchak Road<br>Banka City, IN 813224</p>
+                    <p><i class="fas fa-phone"></i> +91 9661560039,<br>+91 8084968563</p>
+                    <p><i class="fas fa-envelope"></i> jpps.school.edu@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="curriculum.html">Academics</a></li>
+                        <li><a href="admission.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="https://jpps-school.github.io/drawing-board">Drawing Board</a></li>
+                        <li><a href="apply.html#application-form">Admission Form</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="curriculum.html#school-calender">School Calendar</a></li>
+                        <li><a href="https://jpps-resultportal.onrender.com">Result Portal</a></li>
+                        <li><a href="resource.html#important-documents">Important Documents</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100054614447260" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/9661716014" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/@j.p-p.s___team?si=xop_phLMwGV3TeU0" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="tel:+919661716014"><i class="fas fa-phone-alt"></i></a>
+                    </div>
+                    <form id="subscriptionForm">
+                      <div class="newsletter">
+                        <input type="text" name="formType" value="subscription" hidden>
+                        <input type="email" placeholder="Your Email" name="email" required>
+                        <button class="subscribe-btn" type="submit">Subscribe</button>
+                      </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 JPPS School. All Rights Reserved.</p>
+                <a href="https://wa.me/+919661854282" style="text-decoration:none;"><p style="color:#55c1ff">• Build and Designed by Mahi Devs</p></a>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-condition.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- overlay for form submission -->
+    <div id="formOverlay">
+        <div>
+            <span></span>
+            <p>Submitting...</p>
+        </div>
+    </div>
+    
+    <script src="js/sidePages.js"></script>
+    <script>
+    const form = document.getElementById("admissionForm");    
+        
+    function toogleOptions(value,name){
+        let section = document.querySelector(`#${name}`);
+        section.style.display = value ? "block" : "none";
+        let inputs = section.querySelectorAll("input"); 
+        let selects = section.querySelectorAll("select"); 
+        [...inputs, ...selects].forEach(input=>{
+            if(!value){
+                input.removeAttribute("required");
+            }else{
+                if(input.name !== "medical"){
+                    input.setAttribute("required","");
+                }
+            }
+        })
+    } 
+        
+        
+    const inputFiles = document.querySelectorAll("input[type=file]");
+    inputFiles.forEach(input=>{
+        input.addEventListener("change", (e)=>{
+            input.parentNode.querySelectorAll("img").forEach(tag=> tag.remove());
+            const maxSize = 1.5;
+            const files = input.files;
+            for(let file of files){               
+                if(file.size > maxSize*1024*1024){
+                    alert(`The File size of ${file.name} should be less than or equal to ${maxSize}MB in size`);
+                    input.value = "";                    
+                    break;
+                }
+                const img = document.createElement("img");
+                img.style.width = "100%";
+                input.parentNode.appendChild(img);
+                const reader = new FileReader();
+                reader.onload = (event)=>{
+                    img.src = event.target.result;
+                }
+                reader.readAsDataURL(file);     
+            }
+            
+        })
+    })  
+    
+     
+          
+    async function fileToBase64(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = e => resolve(e.target.result);
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+     });
+   }
+
+    
+    
+    form.addEventListener("submit",async function(event) {
+       event.preventDefault();
+       let overlay = document.querySelector("#formOverlay");
+       overlay.style.display ="grid";
+       const image = form.querySelector("#studentImage"); 
+       const documents = form.querySelector("#documents").files;        
+       const formData = new FormData(form);   
+       formData.append("image", await fileToBase64(image.files[0]));  
+       for (let i = 0; i < documents.length; i++) {
+            const base64 = await fileToBase64(documents[i]);
+            formData.append(`document${i + 1}`, base64);
+       }
+  fetch("https://script.google.com/macros/s/AKfycby8HdfeXlVXXdQ8PBU0E8qNgMzf87aUvVcwX2DdE5_lSAUdPRGUvNhjFu29OtoUY-HdEQ/exec", {
+    method: "POST",
+    body: formData
+  })
+  .then(res => res.text())
+  .then(response => {
+    overlay.style.display ="none";
+    form.reset();
+  })
+  .catch(error => {
+    alert("Submission failed.");
+  });
+  
+     });
+     
+    </script>
+    
+</body>
+</html>

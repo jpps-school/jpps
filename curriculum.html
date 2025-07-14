@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum | JPPS Village School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">   
+    
+    <meta name="description" content="Discover the JPPS curriculum designed to blend academic excellence with creativity, sketch-based learning, and strong moral values for holistic student growth.">
+  <meta name="keywords" content="JPPS, JPPS school, about jpps, jpps teaching curriculum">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="James Proneir">
+  <meta property="og:title" content="J-P-P.S Teaching Curriculum">
+  <meta property="og:description" content="Discover the JPPS curriculum designed to blend academic excellence with creativity, sketch-based learning, and strong moral values for holistic student growth.">
+  <meta property="og:image" content="https://jpps-school.github.io/jpps/img/jpps_logo.webp" type="image/webp">
+  <meta property="og:url" content="https://jpps-school.github.io/jpps/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="https://jpps-school.github.io/jpps/img/jpps_logo.webp" type="image/webp">
+</head>
+<body>
+    
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+  <div class="logo-area">
+    <img src="img/jpps_logo.webp" alt="School Logo" />
+    <div class="school-name">JPPS TEACHING CURRICULUM</div>
+  </div>
+  <div class="menu-btn" onclick="toggleDrawer()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- Drawer -->
+<div class="drawer" id="navDrawer">
+  <h2>Menu</h2>
+  <div class="link-cluster">
+      <span>Home</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="index.html#why-choose">Why Choose JPPS?</a>         
+          <a href="index.html#our-principal">Our Principal</a>  
+          <a href="index.html#faculty">Our Distinguished Faculty</a> 
+          <a href="index.html#testimonials">Testimonials</a> 
+           <a href="index.html#life-at-jpps">Life At JPPS</a> 
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>About Us</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="about.html#guiding-principle">Our Guiding Principles</a>         
+          <a href="about.html#founder">Our Beloved Founder</a>
+          <a href="about.html#day-at-jpps">A Day at JPPS</a>
+          <a href="about.html#proud-moments">Our Proud Moments</a>
+          <a href="about.html#journey">Our Journey</a>
+          <a href="about.html#school-uniform">School Uniform</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Acedamics & Curriculum</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="curriculum.html#grade-level">Grade Level Curriculum</a>         
+          <a href="curriculum.html#school-calender">School Calender</a>
+          <a href="curriculum.html#allEvents">Upcoming Events</a>
+          <a href="curriculum.html#teaching-methods">Innovative Teaching Methods</a>
+          <a href="curriculum.html#assessment-system">Continuous Assessment System</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Admission Details</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="admission.html#main-requirement">Essential Requirements</a>         
+          <a href="admission.html#fee-structure">Complete Fee Structure</a>
+          <a href="admission.html#book-price">Complete Book Policy</a>
+          <a href="admission.html#child-need">What Your Child Needs</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Resources</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="resource.html#daily-updates">Daily Updates</a>         
+          <a href="resource.html#important-documents">Important Documents</a>
+          <a href="resource.html#daily-homework">Homework & assignment</a>
+          <a href="admission.html#child-need">What Your Child Needs</a>
+      </div>
+  </div>
+  <a href="facility.html">School Facility</a>
+  <div class="link-cluster">
+      <span>Gallery</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="gallery.html#school-videos">School Videos</a>         
+          <a href="gallery.html#photo-collection">Photo Collection</a>
+          <a href="gallery.html#alumni-stories">Alumni Stories</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Apply</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="apply.html#admission-steps">Three Steps for Admission</a>         
+          <a href="apply.html#application-form">Admission Form</a>
+          <a href="apply.html#affordable-fee">Affordable Fee Structure (overview)</a>
+      </div>
+  </div>
+  <div class="link-cluster">
+      <span>Contact</span>
+      <span onclick="toggleLinkCluster(this)">⟨</span>
+      <div class="cluster-links">
+          <a href="contact.html#connect-with-us">Directly Connect With Us</a>         
+          <a href="contact.html#school-location">School Location</a>   
+          <a href="contact.html#department-contacts">Department Contacts</a>   
+          <a href="contact.html#contact-form">Contact Form</a>   
+          <a href="contact.html#faq">FAQ</a>   
+      </div>
+  </div>
+</div>
+
+<!-- Optional overlay -->
+<div class="overlay" id="drawerOverlay" onclick="toggleDrawer()"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 data-aos="fade-down">Our Comprehensive Curriculum</h1>
+            <p data-aos="fade-up" data-aos-delay="300">Balancing academic excellence with holistic development for village students</p>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+
+    <!-- Curriculum Overview -->
+    <section class="curriculum-overview">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Curriculum Framework</h2>
+            <div class="overview-grid">
+                <div class="overview-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-book-open"></i>
+                    <h3>NCERT-Aligned</h3>
+                    <p>Following the National Council of Educational Research and Training guidelines with local contextualization</p>
+                </div>
+                
+                <div class="overview-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Holistic Approach</h3>
+                    <p>Balancing academics, life skills, and vocational training for comprehensive development</p>
+                </div>
+                
+                <div class="overview-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-language"></i>
+                    <h3>Multilingual</h3>
+                    <p>Instruction in Hindi, English, and local dialects for better comprehension</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grade Levels -->
+    <section class="grade-levels" id="grade-level">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Grade-Level Curriculum</h2>
+            
+            <div class="grade-tabs">
+                <div class="grade-tab active" data-grade="primary">Primary (1-5)</div>
+                <div class="grade-tab" data-grade="middle">Middle (6-8)</div>
+                <div class="grade-tab" data-grade="secondary">Secondary (9-10)</div>
+            </div>
+            
+            <div class="grade-content active" id="primary">
+                <div class="subject-grid">
+                    <div class="subject-card" data-aos="fade-up">
+                        <h4>Mathematics</h4>
+                        <p>Foundational concepts through practical village applications</p>
+                        <ul>
+                            <li>Basic arithmetic</li>
+                            <li>Measurements</li>
+                            <li>Geometrical shapes</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="subject-card" data-aos="fade-up" data-aos-delay="100">
+                        <h4>Hindi</h4>
+                        <p>Reading, writing, and comprehension with local stories</p>
+                        <ul>
+                            <li>Alphabet mastery</li>
+                            <li>Basic grammar</li>
+                            <li>Storytelling</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="subject-card" data-aos="fade-up" data-aos-delay="200">
+                        <h4>English</h4>
+                        <p>Basic communication skills development</p>
+                        <ul>                            
+                            <li>Simple sentences</li>
+                            <li>Tense</li>
+                            <li>Everyday vocabulary</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="subject-card">
+    <h4>Reasoning</h4>
+    <p>Fun-based activities to boost thinking and observation skills</p>
+    <ul>
+        <li>Pattern matching and simple sequences</li>
+        <li>Odd one out and basic classification</li>
+        <li>Picture puzzles and logical grouping</li>
+    </ul>
+                    </div>
+                    
+                    <div class="subject-card" data-aos="fade-up" data-aos-delay="300">
+                        <h4>Environmental Studies</h4>
+                        <p>Understanding local environment and sustainability</p>
+                        <ul>
+                            <li>Local flora/fauna</li>
+                            <li>Basic hygiene</li>
+                            <li>Community helpers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grade-content" id="middle">
+                <div class="subject-grid">
+                    <div class="subject-card">
+                        <h4>Advanced Mathematics</h4>
+                        <p>Practical applications in daily village life</p>
+                        <ul>
+                            <li>Algebra basics</li>
+                            <li>Geometry</li>
+                            <li>Data handling</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="subject-card">
+                        <h4>Science</h4>
+                        <p>Physics, Chemistry, Biology fundamentals</p>
+                        <ul>
+                            <li>Simple experiments</li>
+                            <li>Agricultural science</li>
+                            <li>Health education</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="subject-card">
+                        <h4>Social Studies</h4>
+                        <p>Local history and civic awareness</p>
+                        <ul>
+                            <li>World history</li>
+                            <li>Indian constitution</li>
+                            <li>Geography basics</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="subject-card">
+    <h4>Sketching</h4>
+    <p>Improving accuracy in sketching English and Hindi letters</p>
+    <ul>
+        <li>Practicing capital and small English letters</li>
+        <li>Neat sketching of Hindi swar and vyanjan</li>
+        <li>Focus on proper curves, lines, and spacing</li>
+    </ul>
+                    </div>
+                    
+                    <div class="subject-card">
+    <h4>Reasoning</h4>
+    <p>Introduction to logical thinking and pattern recognition</p>
+    <ul>
+        <li>Basic verbal reasoning – sequences and analogies</li>
+        <li>Picture-based and non-verbal puzzles</li>
+        <li>Number series and classification</li>
+    </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grade-content" id="secondary">
+                <div class="subject-grid">
+                    <div class="subject-card">
+                        <h4>Mathematics</h4>
+                        <p>Preparation for board examinations</p>
+                        <ul>
+                            <li>Algebra</li>
+                            <li>Geometry</li>
+                            <li>Trigonometry</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="subject-card">
+    <h4>Reasoning</h4>
+    <p>Development of analytical and logical thinking abilities</p>
+    <ul>
+        <li>Verbal reasoning – analogies, series, and classification</li>
+        <li>Non-verbal reasoning – patterns and visual puzzles</li>
+        <li>Logical deduction and problem-solving</li>
+    </ul>
+                    </div>
+                    
+                    <div class="subject-card">
+    <h4>Social Science</h4>
+    <p>Exploration of societal, political, and geographical systems</p>
+    <ul>
+        <li>Indian independence and modern history</li>
+        <li>Democratic politics and rights</li>
+        <li>Resources, development, and climate</li>
+    </ul>
+                    </div>
+                    
+                    <div class="subject-card">
+    <h4>Science</h4>
+    <p>In-depth understanding of physical, chemical, and biological systems</p>
+    <ul>
+        <li>Fundamentals of Physics – motion, force, and energy</li>
+        <li>Basic Chemistry – atoms, elements, and reactions</li>
+        <li>Biology – life processes, health, and environment</li>
+    </ul>
+                    </div>
+                    <div class="subject-card">
+    <h4>Sketching</h4>
+    <p>Advanced practice of English and Hindi letter sketching with precision</p>
+    <ul>
+        <li>Perfecting strokes for capital and small English letters</li>
+        <li>Detailed sketching of Hindi swar and vyanjan</li>
+        <li>Styling, spacing, and alignment techniques</li>
+    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="events" id="school-calender">
+        <div class="container">
+            <h2 class="section-title">School calendar</h2>
+            <div class="events-calendar">              
+                <div class="calendar-grid">
+                   <iframe src="https://calendar.google.com/calendar/embed?src=c163bc4d82b9ce61d72f4a9ec203d3c72fd4912a45af85142b0f051507e511df%40group.calendar.google.com&src=en.indian%23holiday%40group.v.calendar.google.com&ctz=Asia%2FKolkata" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                </div>               
+            </div>           
+        </div>
+    </section>
+    
+      <section class="upcomingEvents" id="allEvents">
+         <div class="container">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="events-wrapper" id="eventsContainer">
+                 <p class="empty-msg">Loading events...</p>
+            </div>
+         </div>
+     </section>
+
+    <!-- Teaching Methods -->
+    <section class="teaching-methods" id="teaching-methods">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Innovative Teaching Methods</h2>
+            
+            <div class="method-container">
+                <div class="method-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Activity-Based Learning</h3>
+                    <p>Hands-on activities using local materials to explain concepts</p>
+                    <ul>
+                        <li>Math through farming measurements</li>
+                        <li>Science with household items</li>
+                        <li>Language through local stories</li>
+                    </ul>
+                </div>
+                
+                <div class="method-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Multilingual Instruction</h3>
+                    <p>Teaching in Hindi, English, and local dialects</p>
+                    <ul>
+                        <li>Bilingual flashcards</li>
+                        <li>Translation exercises</li>
+                        <li>Local language support</li>
+                    </ul>
+                </div>
+                
+                <div class="method-card" data-aos="fade-up" data-aos-delay="300">
+    <h3>Story-Based Learning</h3>
+    <p>Teaching concepts through engaging narratives and imagination</p>
+    <ul>
+        <li>Subject topics woven into moral or adventure stories</li>
+        <li>Students create and share their own stories</li>
+        <li>Enhances memory, creativity, and comprehension</li>
+    </ul>
+                </div>
+                
+                <div class="method-card" data-aos="fade-up" data-aos-delay="300">
+    <h3>Roleplay & Simulation</h3>
+    <p>Helping students understand concepts through dramatization and real-life scenarios</p>
+    <ul>
+        <li>Enacting historical events or science processes</li>
+        <li>Mock markets or courts for practical learning</li>
+        <li>Character-based storytelling for language skills</li>
+    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assessment -->
+    <section class="assessment" id="assessment-system">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Continuous Assessment System</h2>
+            
+            <div class="assessment-steps">
+                <div class="assessment-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="assessment-step-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Formative</h3>
+                    <p>Weekly practice test and class participation</p>
+                </div>
+                
+                <div class="assessment-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="assessment-step-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Projects</h3>
+                    <p>Practical applications of concepts</p>
+                </div>
+                
+                <div class="assessment-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="assessment-step-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Term Exams</h3>
+                    <p>Half-yearly and annual examinations</p>
+                </div>
+                
+                <div class="assessment-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="assessment-step-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Progress Tracking</h3>
+                    <p>Individual student growth monitoring</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>JPPS School</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Fattuchak Road<br>Banka City, IN 813224</p>
+                    <p><i class="fas fa-phone"></i> +91 9661560039,<br>+91 8084968563</p>
+                    <p><i class="fas fa-envelope"></i> jpps.school.edu@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="curriculum.html">Academics</a></li>
+                        <li><a href="admission.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="https://jpps-school.github.io/drawing-board">Drawing Board</a></li>
+                        <li><a href="apply.html#application-form">Admission Form</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="curriculum.html#school-calender">School Calendar</a></li>
+                        <li><a href="https://jpps-resultportal.onrender.com">Result Portal</a></li>
+                        <li><a href="resource.html#important-documents">Important Documents</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100054614447260" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/9661716014" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/@j.p-p.s___team?si=xop_phLMwGV3TeU0" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="tel:+919661716014"><i class="fas fa-phone-alt"></i></a>
+                    </div>
+                    <form id="subscriptionForm">
+                      <div class="newsletter">
+                        <input type="text" name="formType" value="subscription" hidden>
+                        <input type="email" placeholder="Your Email" name="email" required>
+                        <button class="subscribe-btn" type="submit">Subscribe</button>
+                      </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 JPPS School. All Rights Reserved.</p>
+                <a href="https://wa.me/+919661854282" style="text-decoration:none;"><p style="color:#55c1ff">• Build and Designed by Mahi Devs</p></a>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-condition.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- overlay for form submission -->
+    <div id="formOverlay">
+        <div>
+            <span></span>
+            <p>Submitting...</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/sidePages.js"></script>
+    <script>
+        // Initialize AOS animation
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        // Grade tab functionality
+        const gradeTabs = document.querySelectorAll('.grade-tab');
+        gradeTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                gradeTabs.forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Hide all content
+                document.querySelectorAll('.grade-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                // Show selected content
+                const gradeId = tab.getAttribute('data-grade');
+                document.getElementById(gradeId).classList.add('active');
+            });
+        });
+        
+        // Animate subject cards when grade changes
+        gradeTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                const cards = document.querySelectorAll(`#${this.dataset.grade} .subject-card`);
+                cards.forEach((card, index) => {
+                    card.style.opacity = 0;
+                    setTimeout(() => {
+                        card.style.opacity = 1;
+                        card.style.transition = 'opacity 0.5s ease';
+                    }, index * 100);
+                });
+            });
+        });
+        
+        const apiKey = 'AIzaSyBlnnNy3hclKbLTjh9sOrv1NTousL4pz8Q'; // Replace with your real API key
+    const calendarIds = [
+      'c163bc4d82b9ce61d72f4a9ec203d3c72fd4912a45af85142b0f051507e511df@group.calendar.google.com', // Your custom calendar
+      'en.indian#holiday@group.v.calendar.google.com' // Indian holidays
+    ];
+
+    const timeMin = new Date().toISOString();
+    const timeMax = new Date(new Date().getFullYear(), 11, 31, 23, 59, 59).toISOString();
+    const container = document.getElementById('eventsContainer');
+
+    async function fetchCalendarEvents(calendarId) {
+      const url = `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(calendarId)}/events?key=${apiKey}&timeMin=${timeMin}&timeMax=${timeMax}&singleEvents=true&orderBy=startTime`;
+      const res = await fetch(url);
+      const data = await res.json();
+      return data.items || [];
+    }
+
+    async function displayEvents() {
+      let allEvents = [];
+
+      for (const calendarId of calendarIds) {
+        const events = await fetchCalendarEvents(calendarId);
+        allEvents = allEvents.concat(events);
+      }
+
+      // Sort events by date
+      allEvents.sort((a, b) => new Date(a.start.date || a.start.dateTime) - new Date(b.start.date || b.start.dateTime));
+
+      container.innerHTML = ''; // Clear loading text
+
+      if (allEvents.length === 0) {
+        container.innerHTML = '<p class="empty-msg">No upcoming events.</p>';
+        return;
+      }
+
+      allEvents.forEach(event => {
+        const title = event.summary || 'Untitled Event';
+        const desc = event.description || 'No description available.';
+        const link = event.htmlLink || '#';
+        const date = new Date(event.start.date || event.start.dateTime);
+
+        const card = document.createElement('div');
+        card.className = 'event-card';
+        card.setAttribute("data-aos","fade-up");
+        card.setAttribute("data-aos-delay","100")
+
+        card.innerHTML = `         
+          <div class="event-date"><i class="fa-solid fa-calendar-day"></i> ${date.toDateString()}</div>
+          <div class="event-title">${title}</div>
+        `;
+
+        container.appendChild(card);
+      });
+    }
+
+    displayEvents();
+
+        
+    </script>
+</body>
+</html>
