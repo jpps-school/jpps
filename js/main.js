@@ -295,7 +295,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
       });
   },500);
   setTimeout(()=>{
-      box.style.transform ="translate(-50%, -90px)";
+      box.style.transform ="translate(-50%, -100px)";
       setTimeout(()=>{
           box.style.display="none";
       },500);
@@ -306,7 +306,7 @@ document.getElementById('install-btn').addEventListener('click', async () => {
   if (deferredPrompt) {
     deferredPrompt.prompt();   
     deferredPrompt = null;
-    box.style.transform ="translate(-50%, -90px)";
+    box.style.transform ="translate(-50%, -100px)";
     setTimeout(()=>{
        box.style.display="none";
     },500);
