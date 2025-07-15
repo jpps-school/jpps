@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="date-badge">${notice.Date}</div>
                 <h3>${notice.Title}</h3>
                 <p>${notice.Subject}</p>
-                <a href="#resource.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>`
+                <a href="resource.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>`
             if(index === 0){
                 wrapper.classList.add("active");
             }           
