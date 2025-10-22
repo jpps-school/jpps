@@ -1,12 +1,38 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Preloader
     const preloader = document.querySelector('.preloader');
-    window.addEventListener('load', function() {
-        preloader.classList.add('fade-out');
-        setTimeout(() => {
-            preloader.style.display = 'none';
-        }, 500);
-    });  
+    preloader.classList.add('fade-out');
+      setTimeout(() => {
+        preloader.style.display = 'none';
+    }, 500);
+  
+    document.querySelector(".hero-scroll").addEventListener("click", () => {
+      window.scrollTo({
+          top: document.documentElement.scrollHeight,
+          behavior: "smooth"
+      });
+    });
+    
+    document.addEventListener("scroll", ()=>{
+      let scrollBtn = document.querySelector(".scroll-top");
+      if(!scrollBtn){
+        scrollBtn = document.createElement("div");
+        scrollBtn.className = "scroll-top";
+        scrollBtn.textContent = "↑"
+        scrollBtn.addEventListener("click", ()=>{
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          })
+        })
+        document.body.appendChild(scrollBtn);
+      }
+      if(window.scrollY > 100){
+        scrollBtn.classList.add("active");
+      }else{
+        scrollBtn.classList.remove("active");
+      }
+    })
 
     // Close mobile menu when clicking a link
     document.querySelectorAll('.nav-links a').forEach(link => {
